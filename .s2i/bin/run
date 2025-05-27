@@ -3,5 +3,6 @@ set -e
 
 echo "Ejecutando run..."
 
+export SERVER_PORT=8081
 # Ejecutar el binario de la aplicación
 exec "${APP_ROOT:-/opt/app-root/src}/app"
