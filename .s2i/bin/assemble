@@ -3,8 +3,10 @@ set -e
 
 echo "Ejecutando assemble..."
 
-# Exportar la variable SERVER_PORT, cambiar aquí para probar
 export SERVER_PORT=8080
+
+# Cambiar al directorio donde está el código fuente y go.mod
+cd /tmp/src
 
 # Construir la aplicación Go
 go build -o /tmp/app
