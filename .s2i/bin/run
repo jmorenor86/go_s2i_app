@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+echo "Ejecutando run..."
+
+# Ejecutar el binario de la aplicación
+exec "${APP_ROOT:-/opt/app-root/src}/app"

@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+echo "Ejecutando assemble..."
+
+# Exportar la variable SERVER_PORT, cambiar aquí para probar
+export SERVER_PORT=8080
+
+# Construir la aplicación Go
+go build -o /tmp/app
+
+# Copiar el binario al directorio de despliegue
+mkdir -p "${APP_ROOT:-/opt/app-root/src}"
+cp /tmp/app "${APP_ROOT:-/opt/app-root/src}/app"
+
+echo "Assemble finalizado."
