@@ -3,7 +3,7 @@ set -e
 
 echo "Ejecutando assemble..."
 
-export SERVER_PORT=8080
+export SERVER_PORT=8081s
 
 # Cambiar al directorio donde está el código fuente y go.mod
 cd /tmp/src
